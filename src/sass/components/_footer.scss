@@ -1,0 +1,47 @@
+.footer {
+    padding: 70px 0;
+    box-shadow: 0 8px 24px #777777;
+    font-size: 1.1rem;
+
+    &__logo {
+        height: 38px;
+        animation: logoFooter ease 0.8s infinite;
+    }
+
+    &__about {
+        p {
+            margin-bottom: 2rem;
+            line-height: 2.5;
+        }
+    }
+
+    &__title {
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+        font-weight: 600;
+    }
+
+    &__content {
+        @include flex(flex-start, space-between);
+        flex-direction: column;
+        p {
+            margin-bottom: 1.25rem;
+            line-height: 2;
+            position: relative;
+            transition: transform 0.4s ease;
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                color: red;
+            }
+
+            &:hover {
+                transform: translateX(10px);
+            }
+        }
+    }
+}

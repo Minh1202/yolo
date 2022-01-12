@@ -1,0 +1,16 @@
+.section {
+    margin-bottom: 80px;
+    & > * ~ * {
+        margin-top: 70px;
+    }
+
+    &__title {
+        font-size: 2rem;
+        text-transform: capitalize;
+        text-align: center;
+        font-family: "Great Vibes", cursive;
+        letter-spacing: 0.3rem;
+        font-weight: 600;
+        text-shadow: 0 4px 10px #777777;
+    }
+}
